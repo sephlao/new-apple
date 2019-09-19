@@ -4,7 +4,11 @@ body {
     font-size: 1rem;
 }
 
-header > nav {
+h1 {
+    font-size: 2rem;
+}
+
+.header > nav {
     background-color: black;
     color: rgb(242, 242, 242);
 }
@@ -19,7 +23,6 @@ header > nav {
     align-items: center;
 }
 
-
 .icon-cancel {
     width: 1em;
 }
@@ -27,7 +30,6 @@ header > nav {
 div.search {
     padding:0 1em 1em 1em;
     border-bottom: 1px solid rgb(40, 40, 40);
-    width: initial;
 }
 
 input.search {
@@ -43,7 +45,6 @@ input.search {
 }
 
 .nav-list-item {
-    /* display: block; */
     padding: 0em 3em;
 }
 
@@ -55,12 +56,12 @@ input.search {
     border-top: thin solid rgb(40, 40, 40);
 }
 
-.nav-list-item:first-child > a {
-    border-top: none;
+.nav-list-item > a:hover {
+    color: #999999;
 }
 
-h1 {
-    font-size: 2rem;
+.nav-list-item:first-child > a {
+    border-top: none;
 }
 
 .iphone-11-pro {
@@ -119,6 +120,11 @@ h1 {
     background-image: url('../img/applewatch.jpg');
 }
 
-section .heading-img {
+.watch .heading-img {
     width: 150px;
+}
+
+.watch .sub-text {
+    font-size: 1em;
+    color: #000000;
 }
