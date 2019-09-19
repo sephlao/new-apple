@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+header > nav {
+    background-color: black;
+    color: rgb(242, 242, 242);
+}
+
+.heading {
+    padding: 0 1em;
+}
+
+.heading > ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+
+.icon-cancel {
+    width: 1em;
+}
+
+div.search {
+    padding:0 1em 1em 1em;
+    border-bottom: 1px solid rgb(40, 40, 40);
+    width: initial;
+}
+
+input.search {
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+    padding: .5em 2em;
+    border: 0;
+    border-radius: 3px;
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    background-position: .5em 50%;
+    color: #ffffff;
+}
+
+.nav-list-item {
+    /* display: block; */
+    padding: 0em 3em;
+}
+
+.nav-list-item > a {
+    padding: 1em 0em;
+    display: block;
+    color: rgb(242, 242, 242);
+    text-decoration: none;
+    border-top: thin solid rgb(40, 40, 40);
+}
+
+.nav-list-item:first-child > a {
+    border-top: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.iphone-11-pro {
+    background-color: #000000;
+    background-image: url('../img/iphone11pro.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 25rem;
+}
+
+.iphone-11-pro .banner-text {
+    padding: 2em 0;
+    text-align: center;
+    display: block;
+    line-height: 2em;
+    color: #ffffff;
+}
+
+
+.sub-text {
+    color: #999999;
+    font-size: .9em;
+}
+
+.banner-buttons > ul li {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+.banner-buttons > ul li > a {
+    color: rgb(102, 187, 255);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.iphone-11 {
+    margin: 1em 0;
+}
+
+.iphone-11, .watch {
+    text-align: center;
+    background-image: url('../img/iphone11.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 25rem;
+    line-height: 2em;
+    color: #000000;
+    padding: 2em 0;
+}
+
+.watch {
+    background-image: url('../img/applewatch.jpg');
+}
+
+section .heading-img {
+    width: 150px;
+}
