@@ -22,12 +22,16 @@ h1 {
 }
 
 .header > nav {
-    background-color: black;
+    background-color: rgb(40, 40, 40);
     color: rgb(242, 242, 242);
 }
 
 .heading {
     padding: 0 1em;
+}
+
+.apple-logo {
+    width: 1.125rem;
 }
 
 .heading > ul {
@@ -149,13 +153,13 @@ input.search {
     font-size: 1em;
     color: #000000;
 }
-
-.mobile-nav-expanded {
-    display: none;
-}
-
-.mobile-nav-collapsed > .heading {
+/* 
+.mobile-nav {
     background-color: rgb(40, 40, 40);
+} */
+
+.mobile-nav.expanded {
+    background-color: #000000;
 }
 
 .humberger-menu {
@@ -163,6 +167,7 @@ input.search {
     height: .5em;
     width: 1em;
     border-bottom: thin solid;
+    display: block;
 }
 
 .icon-rang {
@@ -170,4 +175,16 @@ input.search {
     background-repeat: no-repeat;
     background-position:center right;
     padding: 0 1em;
+}
+
+.menu-list {
+    display: none; /* default state */
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }

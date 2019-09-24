@@ -15,40 +15,36 @@
 <body>
   <main role="main" class="container">
     <header class="header">
-      <nav role="navigation" class="mobile-nav-collapsed" id="collapsed">
+      <nav role="navigation" class="mobile-nav" id="collapsed">
         <div class="heading">
           <ul>
             <li>
-              <div onclick="toggleNav()" class="humberger-menu"></div>
+              <div onclick="toggleNav()">
+                <span class="humberger-menu"></span>
+                <img src="img/icon-x-mark-thin.svg" alt="cancel" class="icon-cancel hide">
+              </div>
             </li>
-            <li><a href="#"><img src="img/logo.svg" alt="apple logo"></a></li>
-            <li><img src="img/cart.svg" alt="cancel" class="icon-cancel"></li>
+            <li><a href="#"><img src="img/logo.svg" alt="apple logo" class="apple-logo"></a></li>
+            <li><img src="img/cart.svg" alt="cancel" class="icon-cart"></li>
           </ul>
         </div>
-      </nav>
-      <nav role="navigation" class="mobile-nav-expanded" id="expanded">
-        <div class="heading">
-          <ul>
-            <li><img onclick="toggleNav()" src="img/icon-x-mark-thin.svg" alt="cancel" class="icon-cancel"></li>
-            <li><a href="#"><img src="img/logo.svg" alt="apple logo"></a></li>
-            <li></li>
-          </ul>
-        </div>
-        <div class="search">
-          <form action="submit" role="form">
-            <input type="search" name="search" class="search" placeholder="Search apple.com/ca">
-          </form>
-        </div>
-        <div class="nav-list">
-          <ul>
-            <li class="nav-list-item"><a href="#">Mac</a></li>
-            <li class="nav-list-item"><a href="#">iPad</a></li>
-            <li class="nav-list-item"><a href="#">iPhone</a></li>
-            <li class="nav-list-item"><a href="#">Watch</a></li>
-            <li class="nav-list-item"><a href="#">TV</a></li>
-            <li class="nav-list-item"><a href="#">Music</a></li>
-            <li class="nav-list-item"><a href="#">Support</a></li>
-          </ul>
+        <div class="menu-list">
+            <div class="search">
+                <form action="submit" role="form">
+                  <input type="search" name="search" class="search" placeholder="Search apple.com/ca">
+                </form>
+              </div>
+              <div class="nav-list">
+                <ul>
+                  <li class="nav-list-item"><a href="#">Mac</a></li>
+                  <li class="nav-list-item"><a href="#">iPad</a></li>
+                  <li class="nav-list-item"><a href="#">iPhone</a></li>
+                  <li class="nav-list-item"><a href="#">Watch</a></li>
+                  <li class="nav-list-item"><a href="#">TV</a></li>
+                  <li class="nav-list-item"><a href="#">Music</a></li>
+                  <li class="nav-list-item"><a href="#">Support</a></li>
+                </ul>
+              </div>
         </div>
       </nav>
     </header>

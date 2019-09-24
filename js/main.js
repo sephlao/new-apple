@@ -1,8 +1,9 @@
 
 // toggle script for navigation menu
-let expanded = false;
 function toggleNav() {
-    expanded = !expanded;
-    document.getElementById('expanded').style.display = expanded ? 'block' : 'none';
-    document.getElementById('collapsed').style.display = expanded ? 'none' : 'block';
+    document.getElementsByClassName('mobile-nav')[0].classList.toggle('expanded');
+    document.getElementsByClassName('menu-list')[0].classList.toggle('show');
+    document.getElementsByClassName('icon-cancel')[0].classList.toggle('show');
+    document.getElementsByClassName('icon-cart')[0].classList.toggle('hide');
+    document.getElementsByClassName('humberger-menu')[0].classList.toggle('hide');
 }
