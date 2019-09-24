@@ -8,6 +8,11 @@ h1 {
     font-size: 2rem;
 }
 
+.container {
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
 .header {
     position: sticky;
     top: 0;
