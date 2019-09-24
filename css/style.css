@@ -6,6 +6,7 @@ body {
 
 h1 {
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .container {
@@ -49,7 +50,7 @@ h1 {
 
 div.search {
     padding:0 1em 1em 1em;
-    border-bottom: 1px solid rgb(40, 40, 40);
+    border-bottom: thin solid rgb(40, 40, 40);
 }
 
 input.search {
@@ -57,7 +58,7 @@ input.search {
     background-color: rgb(40, 40, 40);
     padding: .5em 2em;
     border: 0;
-    border-radius: 3px;
+    border-radius: .25em;
     background-image: url('../img/search.svg');
     background-repeat: no-repeat;
     background-position: .5em 50%;
@@ -141,7 +142,7 @@ input.search {
 }
 
 .watch .heading-img {
-    width: 150px;
+    width: 9.375rem;
 }
 
 .watch .sub-text {
@@ -158,8 +159,8 @@ input.search {
 }
 
 .humberger-menu {
-    border-top: 1px solid;
+    border-top: thin solid;
     height: .5em;
     width: 1em;
-    border-bottom: 1px solid;
+    border-bottom: thin solid;
 }
