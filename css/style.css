@@ -8,6 +8,13 @@ h1 {
     font-size: 2rem;
 }
 
+.header {
+    position: sticky;
+    top: 0;
+    opacity: 0.95;
+    backdrop-filter: blur(.2em);
+}
+
 .header > nav {
     background-color: black;
     color: rgb(242, 242, 242);
@@ -19,8 +26,16 @@ h1 {
 
 .heading > ul {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     align-items: center;
+}
+
+.heading > ul > li:nth-child(2) {
+    text-align: center;
+}
+
+.heading > ul > li:last-child {
+    text-align: right;
 }
 
 .icon-cancel {
@@ -127,4 +142,19 @@ input.search {
 .watch .sub-text {
     font-size: 1em;
     color: #000000;
+}
+
+.mobile-nav-expanded {
+    display: none;
+}
+
+.mobile-nav-collapsed > .heading {
+    background-color: rgb(40, 40, 40);
+}
+
+.humberger-menu {
+    border-top: 1px solid;
+    height: .5em;
+    width: 1em;
+    border-bottom: 1px solid;
 }

@@ -9,16 +9,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    let expanded = false;
+    function toggleNav() {
+      expanded = !expanded;
+      document.getElementById('expanded').style.display = expanded ? 'block' : 'none';
+      document.getElementById('collapsed').style.display = expanded ? 'none' : 'block';
+    }
+  </script>
 </head>
 
 <body>
   <main role="main" class="container">
     <header class="header">
-      <nav role="navigation">
+      <nav role="navigation" class="mobile-nav-collapsed" id="collapsed">
         <div class="heading">
           <ul>
-            <li><img src="img/icon-x-mark-thin.svg" alt="cancel" class="icon-cancel"></li>
+            <li>
+              <div onclick="toggleNav()" class="humberger-menu"></div>
+            </li>
             <li><a href="#"><img src="img/logo.svg" alt="apple logo"></a></li>
+            <li><img src="img/cart.svg" alt="cancel" class="icon-cancel"></li>
+          </ul>
+        </div>
+      </nav>
+      <nav role="navigation" class="mobile-nav-expanded" id="expanded">
+        <div class="heading">
+          <ul>
+            <li><img onclick="toggleNav()" src="img/icon-x-mark-thin.svg" alt="cancel" class="icon-cancel"></li>
+            <li><a href="#"><img src="img/logo.svg" alt="apple logo"></a></li>
+            <li></li>
           </ul>
         </div>
         <div class="search">
