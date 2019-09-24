@@ -164,3 +164,10 @@ input.search {
     width: 1em;
     border-bottom: thin solid;
 }
+
+.icon-rang {
+    background-image: url('../img/right-chevron.svg');
+    background-repeat: no-repeat;
+    background-position:center right;
+    padding: 0 1em;
+}
